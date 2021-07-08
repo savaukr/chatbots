@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "node ."
+    "start": "node .",
+    "dev": "concurrently \"npm run build\" \"npm run start\""
   },
   "keywords": [],
   "author": "",
@@ -18,9 +19,11 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.2",
+    "concurrently": "^6.2.0",
     "eslint": "^7.30.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-react": "^7.24.0",
+    "nodemon": "^2.0.9",
     "typescript": "^4.3.5"
   }
 }
